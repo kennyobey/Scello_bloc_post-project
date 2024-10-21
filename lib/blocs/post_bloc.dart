@@ -40,7 +40,7 @@ class PostBloc extends Bloc<PostEvent, PostState> {
       }
     });
 
-    // Event handler for updating a post
+
     on<UpdatePostEvent>((event, emit) async {
       emit(PostEditingState()); 
       try {
